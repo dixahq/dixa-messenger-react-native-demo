@@ -5,6 +5,8 @@
 A simple React Native demo application that runs the Dixa Messenger SDK.
 [See messenger-docs.dixa.io for documentation](https://messenger-docs.dixa.io/) details.
 
+<img width="634" alt="preview" src="https://user-images.githubusercontent.com/6588469/207166648-edb59ae8-76d0-49dc-bada-601828c7c19e.png">
+
 ### Before you start
 
 You will need the following to be able to run this demo locally.:
