@@ -11,9 +11,9 @@ A simple React Native demo application that runs the Dixa Messenger SDK.
 
 You will need the following to be able to run this demo locally.:
 
-1. Admin access to an Dixa organization. If you don't have access to an organization [contact Dixa](https://www.dixa.com/free-trial/) to get it.
+1. **Admin access to an Dixa organization**. If you don't have access to an organization [contact Dixa](https://www.dixa.com/free-trial/) to get it.
 
-2. A Dixa Messenger Token. Go to your Dixa organization "Settings" -> "Messenger" -> "Edit the Appearance & Setup". Click "Setup" -> "Mobile" -> "Copy Messenger Token" [See documentation here](https://support.dixa.help/en/articles/825-how-to-create-a-dixa-messenger) or the five steps in the image below.
+2. **A Dixa Messenger Token**. Go to your Dixa organization **Settings** -> **Messenger** -> **Edit the Appearance &amp; Setup**. Click **Setup** -> **Mobile** -> **Copy Messenger Token** ([See documentation here](https://support.dixa.help/en/articles/825-how-to-create-a-dixa-messenger) and the five steps in the image below).
 
 <img width="1193" alt="Screenshot 2022-12-12 at 21 02 43" src="https://user-images.githubusercontent.com/6588469/207162087-3132c0b8-247e-43a4-9d74-92decabe1381.png">
 
