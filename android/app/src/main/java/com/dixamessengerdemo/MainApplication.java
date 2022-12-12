@@ -67,7 +67,7 @@ public class MainApplication extends Application implements ReactApplication {
       // Note that you might want configure it from JavaScript by providing
       // custom arguments. See - https://reactnative.dev/docs/native-modules-android#argument-types
       DixaMessenger.Configuration config = new DixaMessenger.Configuration.Builder()
-              .setApiKey("DIXA_MESSENGER")
+              .setApiKey("<YOUR_DIXA_MESSENGER_TOKEN>")
               .setLogLevel(LogLevel.ALL)
               .build();
 

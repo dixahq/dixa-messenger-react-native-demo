@@ -13,6 +13,7 @@
 #import <React/RCTSurfacePresenter.h>
 #import <React/RCTSurfacePresenterBridgeAdapter.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
+#import <DixaMessenger/DixaMessenger.h>
 
 #import <react/config/ReactNativeConfig.h>
 
@@ -57,7 +58,14 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  [Messenger configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>" logLevel:3 pushEnvironment:1];
+
   return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [Messenger registerForPushNotificationWithDeviceToken:deviceToken];
 }
 
 /// This method controls whether the `concurrentRoot`feature of React18 is turned on or off.

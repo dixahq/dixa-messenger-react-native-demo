@@ -1,11 +1,14 @@
 import {NativeModules, Platform} from 'react-native';
 
-const {DixaMessengerModuleAndroid} = NativeModules;
-
+const {DixaMessengerModuleAndroid, DixaMessengerModuleIos} = NativeModules;
 export function openDixaMessenger() {
   switch (Platform.OS) {
     case 'android': {
       DixaMessengerModuleAndroid.openMessenger();
+      break;
+    }
+    case 'ios': {
+      DixaMessengerModuleIos.openMessenger();
       break;
     }
     default: {
