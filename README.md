@@ -5,6 +5,16 @@
 A simple React Native demo application that runs the Dixa Messenger SDK.
 [See messenger-docs.dixa.io for documentation](https://messenger-docs.dixa.io/) details.
 
+### Before you start
+
+You will need the following to be able to run this demo locally.:
+
+1. Admin access to an Dixa organization. If you don't have access to an organization [contact Dixa](https://www.dixa.com/free-trial/) to get it.
+
+2. A Dixa Messenger Token. Go to your Dixa organization "Settings" -> "Messenger" -> "Edit the Appearance & Setup". Click "Setup" -> "Mobile" -> "Copy Messenger Token" [See documentation here](https://support.dixa.help/en/articles/825-how-to-create-a-dixa-messenger)
+
+<img width="1193" alt="Screenshot 2022-12-12 at 21 02 43" src="https://user-images.githubusercontent.com/6588469/207162087-3132c0b8-247e-43a4-9d74-92decabe1381.png">
+
 ### Running Android demo application
 
 1. Make sure that React Native is set up. [For details see the React native documentation for environment setup](https://reactnative.dev/docs/environment-setup).
@@ -21,6 +31,10 @@ A simple React Native demo application that runs the Dixa Messenger SDK.
 
 2. Clone this project and run `npm i` to install dependencies.
 
-3. For iOS make sure to provide a Messenger token to `AppDelegate.mm` [`configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>"`](./ios/DixaMessengerDemo/AppDelegate.mm#L62).
+3. Open `.xcworkspace` file in `dixa-messenger-react-native-demo/ios` directory with [Xcode](https://apps.apple.com/us/app/xcode/id497799835).
 
-4. Running iOS demo app: Issue `npx react-native run-ios` to build and launch.
+4. In Xcode add a package dependency to your project with the following URL `https://github.com/dixahq/ios-messenger` using Swift package manager [see how here](https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/).
+
+5. For iOS make sure to provide a Messenger token to `AppDelegate.mm` [`configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>"`](./ios/DixaMessengerDemo/AppDelegate.mm#L62).
+
+6. Running iOS demo app: Issue `npx react-native run-ios` to build and launch.
