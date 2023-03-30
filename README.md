@@ -33,9 +33,13 @@ You will need the following to be able to run this demo locally.:
 
 2. Clone this project and run `npm i` to install dependencies.
 
-3. Open `.xcworkspace` file in `dixa-messenger-react-native-demo/ios` directory with [Xcode](https://apps.apple.com/us/app/xcode/id497799835).
+3. Run `bundle install` to install gems including `cocoapods`
 
-4. In Xcode add a package dependency to your project with the following URL `https://github.com/dixahq/ios-messenger` using Swift package manager [see how here](https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/).
+4. cd into the `ios` directory and run `pod install` to install the required `cocoapods` for this SDK.
+
+5. Open `.xcworkspace` file in `dixa-messenger-react-native-demo/ios` directory with [Xcode](https://apps.apple.com/us/app/xcode/id497799835).
+
+6. In Xcode add a package dependency to your project with the following URL `https://github.com/dixahq/ios-messenger` using Swift package manager [see how here](https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/).
 
 5. For iOS make sure to provide a Messenger token to `AppDelegate.mm` [`configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>"`](./ios/DixaMessengerDemo/AppDelegate.mm#L62).
 
