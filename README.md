@@ -23,7 +23,7 @@ To run this demo locally, you will need:
 
 2. Clone this project and run `npm install` to install dependencies.
 
-3. Configure the Dixa SDK in the `OnCreate` method of your Application class. See [MainApplication.java](./android/app/src/main/java/com/dixamessengerdemo/MainApplication.java#L70) for more details.
+3. Configure the Dixa SDK in the `OnCreate` method of your Application class. See [MainApplication.java](./android/app/src/main/java/com/dixamessengerdemoapp/MainApplication.kt#L46) for more details.
 
     ```kotlin
     DixaMessenger.Configuration config = new DixaMessenger.Configuration.Builder()
