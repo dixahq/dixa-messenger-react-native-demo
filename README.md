@@ -19,11 +19,13 @@ To run this demo locally, you will need:
 
 ### Running the Demo Application on Android
 
+> 💡**Note**: Java 17 is required to build and run on Android
+
 1. Ensure React Native is set up. Refer to the [React Native documentation for environment setup](https://reactnative.dev/docs/environment-setup) for details.
 
 2. Clone this project and run `npm install` to install dependencies.
 
-3. Configure the Dixa SDK in the `OnCreate` method of your Application class. See [MainApplication.java](./android/app/src/main/java/com/dixamessengerdemoapp/MainApplication.kt#L46) for more details.
+3. Configure the Dixa SDK in the `OnCreate` method of your Application class. See [MainApplication.kt](./android/app/src/main/java/com/dixamessengerdemoapp/MainApplication.kt#L46) for more details.
 
     ```kotlin
     DixaMessenger.Configuration config = new DixaMessenger.Configuration.Builder()
@@ -48,15 +50,12 @@ To run this demo locally, you will need:
 
 6. In Xcode, add a package dependency to your project using the URL https://github.com/dixahq/ios-messenger with the Swift Package Manager. For guidance, refer to [Managing Package Dependencies with Swift Package Manager in Xcode](https://alexandersandberg.com/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/).
 
-7. For iOS make sure to provide a Messenger token to `AppDelegate.mm` [`configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>"`](./ios/DixaMessengerDemo/AppDelegate.mm#L62).
-
-7. Configure the Dixa SDK in the `didFinishLaunchingWithOptions` method of your AppDelegate class. See [AppDelegate.mm](./ios/DixaMessengerDemo/AppDelegate.mm#L62) for more details.
+7. Configure the Dixa SDK in the `didFinishLaunchingWithOptions` method of your AppDelegate class. See [AppDelegate.mm](./ios/DixaMessengerDemoApp/AppDelegate.mm#L14) for more details.
 
     ```swift
     [Messenger 
         configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>" 
-        logLevel:3 
-        pushEnvironment:1
+        logLevel:3
     ];
     ```
 
