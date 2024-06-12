@@ -3,7 +3,7 @@
 ## Description
 
 This is a simple React Native demo application that showcases how to use the Dixa Messenger SDK.
-For detailed documentation, visit [Dixa Messenger Docs](https://messenger-docs.dixa.io/).
+For detailed documentation, visit [Dixa Messenger Docs in Dixa Developer Hub](https://docs.dixa.io/docs/dixamessenger/).
 
 <img width="634" alt="preview" src="https://user-images.githubusercontent.com/6588469/207166648-edb59ae8-76d0-49dc-bada-601828c7c19e.png">
 
@@ -11,7 +11,7 @@ For detailed documentation, visit [Dixa Messenger Docs](https://messenger-docs.d
 
 To run this demo locally, you will need:
 
-1. **Admin **access to **a** Dixa organization**. If you don't have access, [contact Dixa](https://www.dixa.com/free-trial/) to get it.
+1. **Admin** access to a Dixa organization. If you don't have access, [contact Dixa](https://www.dixa.com/free-trial/) to get it.
 
 2. **A Dixa Messenger Token**. Obtain it from your Dixa organization by navigating to Settings -> Messenger -> Edit the Appearance & Setup -> Setup -> Mobile -> Copy Messenger Token. For more details, see the [documentation](https://support.dixa.help/en/articles/825-how-to-create-a-dixa-messenger).
 
@@ -19,7 +19,7 @@ To run this demo locally, you will need:
 
 ### Running the Demo Application on Android
 
-> 💡**Note**: Java 17 is required to build and run on Android
+> 💡**Note**: Java 17 is required to build and run on Android and Android API level 23 (Android 6.0 - Marshmallow)
 
 1. Ensure React Native is set up. Refer to the [React Native documentation for environment setup](https://reactnative.dev/docs/environment-setup) for details.
 
@@ -27,12 +27,12 @@ To run this demo locally, you will need:
 
 3. Configure the Dixa SDK in the `OnCreate` method of your Application class. See [MainApplication.kt](./android/app/src/main/java/com/dixamessengerdemoapp/MainApplication.kt#L46) for more details.
 
-    ```kotlin
-    DixaMessenger.Configuration config = new DixaMessenger.Configuration.Builder()
-              .setApiKey("<YOUR_DIXA_MESSENGER_TOKEN>")
-              .setLogLevel(LogLevel.ALL)
-              .build();
-    ```
+   ```kotlin
+   DixaMessenger.Configuration config = new DixaMessenger.Configuration.Builder()
+             .setApiKey("<YOUR_DIXA_MESSENGER_TOKEN>")
+             .setLogLevel(LogLevel.ALL)
+             .build();
+   ```
 
 4. To build and launch the Android demo app, run `npx react-native run-android`.
 
@@ -52,12 +52,11 @@ To run this demo locally, you will need:
 
 7. Configure the Dixa SDK in the `didFinishLaunchingWithOptions` method of your AppDelegate class. See [AppDelegate.mm](./ios/DixaMessengerDemoApp/AppDelegate.mm#L14) for more details.
 
-    ```swift
-    [Messenger 
-        configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>" 
-        logLevel:3
-    ];
-    ```
-
+   ```swift
+   [Messenger
+       configureWithMessengerToken: @"<YOUR_DIXA_MESSENGER_TOKEN>"
+       logLevel:3
+   ];
+   ```
 
 8. To build and launch the iOS demo app, run `npx react-native run-ios`.
