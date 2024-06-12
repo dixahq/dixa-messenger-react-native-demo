@@ -11,7 +11,7 @@ For detailed documentation, visit [Dixa Messenger Docs in Dixa Developer Hub](ht
 
 To run this demo locally, you will need:
 
-1. **Admin** access to **a** Dixa organization\*\*. If you don't have access, [contact Dixa](https://www.dixa.com/free-trial/) to get it.
+1. **Admin** access to a Dixa organization. If you don't have access, [contact Dixa](https://www.dixa.com/free-trial/) to get it.
 
 2. **A Dixa Messenger Token**. Obtain it from your Dixa organization by navigating to Settings -> Messenger -> Edit the Appearance & Setup -> Setup -> Mobile -> Copy Messenger Token. For more details, see the [documentation](https://support.dixa.help/en/articles/825-how-to-create-a-dixa-messenger).
 
