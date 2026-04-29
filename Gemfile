@@ -6,5 +6,5 @@ ruby ">= 2.6.10"
 # Cocoapods 1.15 introduced a bug which break the build. We will remove the upper
 # bound in the template on Cocoapods with next React Native release.
 gem 'cocoapods', '1.15.0'
-gem 'activesupport', '>= 6.1.7.10', '< 7.1.0'
+gem 'activesupport', '>= 6.1.7.10', '< 7.3.0'
 gem 'rexml', '3.4.2'
