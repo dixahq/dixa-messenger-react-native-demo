@@ -8,8 +8,14 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {openDixaMessenger} from './src/dixaMessengerModule';
+
+const Colors = {
+  black: '#000',
+  darker: '#222',
+  lighter: '#F3F3F3',
+  white: '#FFF',
+};
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
